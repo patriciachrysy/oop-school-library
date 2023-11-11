@@ -3,7 +3,7 @@
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 SCHOOL LIBRARY](#-school-library)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
