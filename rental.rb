@@ -8,7 +8,7 @@ class Rental
     @book = book
 
     @person.rentals << self
-    @book.rentals << self
+    book.rental << self
   end
 
   def self.all
