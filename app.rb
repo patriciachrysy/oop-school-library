@@ -53,7 +53,7 @@ class App
     teacher_name = gets.chomp.to_s
     print 'Specialization: '
     specialization = gets.chomp.to_s
-    Teacher.new(specialization, teacher_age, name: teacher_name)
+    Teacher.new(teacher_age, specialization, teacher_name)
   end
 
   def self.create_book
@@ -71,11 +71,18 @@ class App
       puts "(#{index + 1}) Title: #{book.title}, Author: #{book.author}"
     end
     rental_book_index = gets.chomp.to_i
-    rental_person = Person.all[rental_book_index - 1]
+    rental_book = Book.all[rental_book_index - 1]
+
+    puts 'Please select a person from the following list by number'
+    Person.all.map.with_index do |person, index|
+      puts "(#{index + 1}) Name: #{person.name}, Age: #{person.age}"
+    end
+    rental_person_index = gets.chomp.to_i
+    rental_person = Person.all[rental_person_index - 1]
 
     print 'Date: '
     date = gets.chomp
-    Rental.new(date, rental_person, rental_book_index)
+    Rental.new(date, rental_person, rental_book)
     puts 'Rental created successfully.'
   end
 
