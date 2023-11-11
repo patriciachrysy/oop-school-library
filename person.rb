@@ -6,7 +6,7 @@ class Person < Nameable
   attr_accessor :name, :age, :rentals
 
   def initialize(age, name = 'Unkown', parent_permission: true)
-    super
+    super()
     @id = Random.rand(1..1000)
     @name = name
     @age = age
@@ -20,6 +20,10 @@ class Person < Nameable
 
   def correct_name
     @name
+  end
+
+  def self.all
+    ObjectSpace.each_object(self).to_a
   end
 
   private
