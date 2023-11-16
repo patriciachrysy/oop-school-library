@@ -20,4 +20,8 @@ describe Rental do
   it 'should add this rental to Cinderella books' do
     expect(book.rentals).to include(rental)
   end
+  it 'should find Sallys rental in the rental list' do
+    expect(Rental.all[0].person.name).to eq('Sally Pratt')
+    expect(Rental.all[0].book.title).to eq('Cinderela')
+  end
 end

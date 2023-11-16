@@ -22,4 +22,22 @@ describe Person do
     expect(person.can_use_services?).to eq(false)
     expect(unknown_person.can_use_services?).to eq(true)
   end
+
+  it 'should add rental for Cinderela book to Sally' do
+    person.send(:add_rental, '16-11-2023', book)
+    expect(person.rentals[0].book).to eq(book)
+    expect(person.rentals[0].date).to eq('16-11-2023')
+  end
+
+  it 'should return true for Unkown person' do
+    expect(unknown_person.send(:of_age?)).to eq(true)
+  end
+
+  it 'should find Sally Pratt among the list of persons' do
+    expect(Person.all[3].name).to eq('Sally Pratt')
+  end
+
+  it 'should return Unkown for the second user' do
+    expect(unknown_person.correct_name).to eq('Unkown')
+  end
 end
