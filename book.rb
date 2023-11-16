@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './rental'
 # the student class
 class Book

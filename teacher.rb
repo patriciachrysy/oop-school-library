@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './person'
 # the teacher class
 class Teacher < Person

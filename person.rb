@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './nameable'
 require './rental'
 # the person class

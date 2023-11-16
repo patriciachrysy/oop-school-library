@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './nameable'
 # the decorator class
 class BaseDecorator < Nameable

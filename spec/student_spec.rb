@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rspec'
 require_relative '../classroom'
 require_relative '../student'
@@ -16,8 +18,8 @@ describe Student do
   end
 
   it 'should add Emma to class B' do
-    student.classroom=(class_b)
-    expect(student.classroom.label).to eq("Class B")
+    student.classroom = (class_b)
+    expect(student.classroom.label).to eq('Class B')
     expect(student.classroom.students).to include(student)
   end
 end
