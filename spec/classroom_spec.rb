@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rspec'
 require_relative '../classroom'
 require_relative '../student'

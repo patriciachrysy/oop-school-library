@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require './base_decorator'
 # the capitalize decorator class
 class CapitalizeDecorator < BaseDecorator
