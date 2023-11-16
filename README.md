@@ -106,6 +106,12 @@
 - Twitter: [@twitterhandle](https://twitter.com/ManezeuP)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/manezeu-patricia-chrystelle/)
 
+👤 **Ayokunnumi Omololu**
+
+- GitHub: [@Ayokunnumi1](https://github.com/Ayokunnumi1)
+- Twitter: [@Ayokunnumi](https://twitter.com/AyokunnumiA)
+- LinkedIn: [@Ayokunnumi](https://www.linkedin.com/in/ayokunnumiomololu)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
